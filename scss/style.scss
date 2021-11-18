@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+body{
+    background-color: #101010;
+    font-family: 'Rubik', sans-serif;
+}
+h1{
+    font-size: 5vw;
+}
+h2{
+    font-size: 3vw;
+}
+h3{
+    font-size: 1.7vw;
+}
+h4{
+    font-size: 1.8vw;
+}
+h5{
+    font-size: 1.3vw;
+}
+h6{
+    font-size: 1vw;
+}
+p{
+    font-size: 1.2vw;
+}
+
+nav{
+    border-color: #101010;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 2vw 0 2vw;
+    .nav__brand{
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        h3{
+        text-transform: uppercase;
+        letter-spacing: 0.3vw;
+        color: #fff;
+        }
+        img{
+        height: 10vh;
+        }
+    }
+    .nav__links{
+        color: #fff;
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                a{
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    color: #399854;
+                    text-decoration: underline #F4D448;
+                    text-underline-offset: 20px;
+                }
+                }
+            margin: 0 2vw;
+            font-size: 2.2vh;
+            cursor: pointer;
+            }
+        }
+    }
+}
+
+.dark{
+    background-color: #101010;
+}
+
+.semiDark{
+    background-color: #191919;
+}
+
+.section{
+    padding: 18vh 10vw;
+    .section__title__container{
+        text-align: center;
+        .section__subTitle{
+            h5{
+                background: linear-gradient(to right, #399854, #F4D448);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+            .section__title{
+                color: #fff;
+            }
+            .section__info{
+            p{
+                color: #757575;
+            }
+        }
+    }
+}
+
+.hero{
+    display: grid;
+    gap: 4vw;
+    .hero__title__container{
+        .hero__title{
+           text-align: center;
+           h1{
+               background: linear-gradient(to right, #399854, #F4D448);
+               -webkit-text-fill-color: transparent;
+               -webkit-background-clip: text;
+           }
+       }
+    }
+}
+
+.hero__service__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 10vw;
+    .hero__service{
+        display: grid;
+        gap: 0.3rem;
+        .hero__service__logo{
+            img{
+                width: 5vw;
+            }
+        }
+        .hero__service__title{
+            color: #fff;
+        }
+        .hero__service__text{
+            color: #757575;
+            padding: 0 2rem;
+        }
+    }
+}
+.about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 20vw;
+    padding-right: 10vw;
+    .about__images{
+        position: relative;
+        img{
+            height: 60vh;
+            z-index: 2;
+            position: absolute;
+            &:nth-of-type(2){
+                width: 28vw;
+                left: -7vw;
+                bottom: 10vh;
+                z-index: 1;
+            }
+        }
+    }
+.about__content__container{
+    display: grid;
+    gap: 6vh;
+    .about__title{
+        color: #fff;
+        margin-right: 3vw;
+    }
+    .about__info{
+        color: #757575;
+        margin-right: 3vw;
+    }
+    .about__link{
+        span{
+            background: linear-gradient(to right, #399854, #F4D448);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-size: 1.5vw;
+            font-weight: 400;
+            border: 2px solid #F4D448;
+            padding: 9px 20px;
+            &:hover{
+                cursor: pointer;
+                transform: translateY(-10px);
+            }
+        }
+            width: max-content;
+            display: inline-block;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.services{
+     display: grid;
+     gap: 4vw;
+     .services__container{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 2vw;
+         .service{
+             background-color: black;
+             padding: 3vw 2vw 3vw 3vw;
+             display: grid;
+             gap: 1vw;
+             border-radius: 1rem;
+             transition: 0.2s ease-in-out;
+             &:hover{
+                 box-shadow: rgba(127, 170, 26, 0.534) 0px 2px 4px 0px,
+                 rgba(18 , 79 , 105, 0.829 ) 0px 2px 16px 0px;
+                 transform: translateY(-10px);
+                 
+            }
+            .service__logo{
+                img{
+                    height: 8vh;
+                }
+            }
+            .service__title{
+                color: white;
+            }
+            .service__info{
+                color: #757575;
+                opacity: 75%;
+            }
+        }
+    }
+}
+
+.jurneys{
+    display: grid;
+    gap: 4vw;
+    .jurney__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 5vh;
+        .jurney{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2vh;
+            background-color: black;
+            padding: 2.5vw;
+            border-radius: 1rem;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                box-shadow: rgba(127, 170, 26, 0.534) 0px 2px 4px 0px,
+                rgba(18 , 79 , 105, 0.829 ) 0px 2px 16px 0px;
+                transform: translateY(-10px);
+           }
+           .jurney__icon{
+               img{
+                   height: 8vh;  
+               }
+           }
+           .jurney__number{
+               color: white;
+           }
+           .jurney__info{
+               color: #757575;
+           }
+        }
+    }
+}
+
