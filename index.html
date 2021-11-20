@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="/scss/style.css">
 </head>
 <body>
+    <section class="scrollToTop">
+        <img src="/img/arrow-circle-up.svg" alt="">
+    </section>
         <nav>
             <div class="nav__brand">
                 <img src="/img/compress-arrows.svg" alt="" srcset="">
                 <h3>Focus agency</h3>
+            </div>
+            <div class="responsive__toggle">
+                <img src="/img/list-ul.svg" alt="">
             </div>
             <div class="nav__links">
                 <ul>
@@ -23,6 +29,21 @@
                 </ul>
             </div>
         </nav>
+        <div class="responsive__navbar">
+            <div class="responsive__nav__brand">
+                <img src="/img/compress-arrows.svg" alt="" srcset="">
+                <h3>Focus agency</h3>
+            </div>
+            <div class="responsive__nav__links">
+                <ul>
+                    <li><a id="nav__link" href="#home">Home</a></li>
+                    <li><a id="nav__link" href="#about">About</a></li>
+                    <li><a id="nav__link" href="#services">Services</a></li>
+                    <li><a id="nav__link" href="#jurney">Jurney</a></li>
+                    <li><a id="nav__link" href="#clients">Clients</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="section hero dark" id="home">
             <div class="hero__title__container">
                 <div class="hero__title">
@@ -59,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="section about semiDark id="about">
+        <div class="section about semiDark" id="about">
             <div class="about__images">
                 <img src="/img/one.jpg" alt="">
                 <img src="/img/two.jpg" alt="">
@@ -144,37 +165,130 @@
                 <p>Our path in the past 5 years.</p>
             </div>
         </div>
-    
-    <div class="jurney__container">
-        <div class="jurney" id="ms1">
-            <div class="jurney__icon">
-                <img src="/img/heart.svg" alt="">
+        <div class="jurney__container">
+            <div class="jurney" id="ms1">
+                <div class="jurney__icon">
+                    <img src="/img/heart.svg" alt="">
+                </div>
+                <h2 class="jurney__number">45</h2>
+                <p class="jurney__info">Customers</p>
             </div>
-            <h2 class="jurney__number">45</h2>
-            <p class="jurney__info">Customers</p>
-        </div>
-        <div class="jurney" id="ms2">
-            <div class="jurney__icon">
-                <img src="/img/clock-seven.svg" alt="">
+            <div class="jurney" id="ms2">
+                <div class="jurney__icon">
+                    <img src="/img/clock-seven.svg" alt="">
+                </div>
+                <h2 class="jurney__number">795</h2>
+                <p class="jurney__info">Hours in operation</p>
             </div>
-            <h2 class="jurney__number">795</h2>
-            <p class="jurney__info">Hours in operation</p>
-        </div>
-        <div class="jurney" id="ms3">
-            <div class="jurney__icon">
-                <img src="/img/check-circle.svg" alt="">
+            <div class="jurney" id="ms3">
+                <div class="jurney__icon">
+                    <img src="/img/check-circle.svg" alt="">
+                </div>
+                <h2 class="jurney__number">63</h2>
+                <p class="jurney__info">Completed Projects</p>
             </div>
-            <h2 class="jurney__number">63</h2>
-            <p class="jurney__info">Completed Projects</p>
-        </div>
-        <div class="jurney" id="ms4">
-            <div class="jurney__icon">
-                <img src="/img/coffee.svg" alt="">
+            <div class="jurney" id="ms4">
+                <div class="jurney__icon">
+                    <img src="/img/coffee.svg" alt="">
+                </div>
+                <h2 class="jurney__number">1000+</h2>
+                <p class="jurney__info">Cups of coffe</p>
             </div>
-            <h2 class="jurney__number">1000+</h2>
-            <p class="jurney__info">Cups of coffe</p>
         </div>
     </div>
-</div>
+    <div class="section clients dark" id="clients">
+        <div class="section__title__container">
+            <div class="section__subTitle">
+                <h5>Our clients</h5>
+            </div>
+            <div class="section__title">
+                <h2>We working with brands.</h2>
+            </div>
+        </div>
+            <div class="clients__container">
+                <div class="client" id="c1">
+                    <img src="/img/brand1.png" alt="" >
+                </div>
+                <div class="client" id="c2">
+                    <img src="/img/brand2.png" alt="" >
+                </div>
+                <div class="client" id="c3">
+                    <img src="/img/brand3.png" alt="" >
+                </div>
+                <div class="client" id="c4">
+                    <img src="/img/brand4.png" alt="" >
+                </div>
+                <div class="client" id="c5">
+                    <img src="/img/brand5.png" alt="" >
+                </div>
+                <div class="client" id="c6">
+                    <img src="/img/brand6.png" alt="" >
+                </div>
+                <div class="client" id="c7">
+                    <img src="/img/brand7.png" alt="" >
+                </div>
+                <div class="client" id="c8">
+                    <img src="/img/brand8.png" alt="" >
+                </div>
+                <div class="client" id="c9">
+                    <img src="/img/brand9.png" alt="" >
+                </div>
+                <div class="client" id="c10">
+                    <img src="/img/brand10.png" alt="" >
+                </div>
+            </div>
+    </div>
+    <footer class="section">
+        <div class="footer__read">
+            <h2>Build Something Together</h2>
+            <button>Read more</button>
+        </div>
+        <div class="footer__content">
+            <div class="footer__brand">
+                <div class="footer__logo">
+                    <img src="/img/compress-arrows.svg" alt="">
+                    <h3>Focus agency</h3>
+                </div>
+                <div class="footer__copyright">
+                    <p>Copyright 2021 Focus agency Digital. All rights reserved</p>
+                </div>
+            </div>
+            <div class="footer__links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Portfolio</li>
+                    <li>About us</li>
+                    <li>Blog</li>
+                    <li>Team</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h3>Company</h3>
+                <ul>
+                    <li>Portfolio</li>
+                    <li>About us</li>
+                    <li>Blog</li>
+                    <li>Team</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h3>Connect with us</h3>
+                <ul>
+                    <li>Email: info@focusagency.com</li>
+                    <li>Address: Focus agency s.r.o., Kosice, Slovakia</li>
+                    <li>09000000</li>
+                </ul>
+                <ul class="footer__social__links">
+                    <li><img src="/img/facebook-f.svg" alt=""></li>
+                    <li><img src="/img/twitter.svg" alt=""></li>
+                    <li><img src="/img/instagram.svg" alt=""></li>
+                    <li><img src="/img/linkedin.svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/scitpt.js"></script>
 </body>
 </html>
